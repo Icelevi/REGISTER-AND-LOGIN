@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navHeader"></header>
+    <!--REGISTER DIV-->
+
+    <div class="divStyle" id="register">
+        <h1 class="title">CADASTRO</h1>
+        <hr class="hr">
+        <div class="email">
+            <label class="emailLabel" for="Registeremail">EMAIL</label>
+            <input class="emailInput" type="email" id="Registeremail" placeholder="digite um email" required="true">
+        </div>
+        <div class="pass">
+            <label class="passLabel" for="Registerpassword">SENHA</label>
+            <input type="text" id="Registerpassword" placeholder="digite uma senha" required="true" maxlength="12">
+        </div>
+        <div id="checkArea">
+            <input id="checkbox" type="checkbox" ;>
+            <label id="terms">Eu li e concordo com os <a href="#">termos de uso</a></label>
+        </div>
+        <button class="btn" type="submit" id="regisbtn">CADASTRAR</button>
+    </div>
+
+    <!-- LOGIN DIV-->
+    <div class="divStyle" id="login">
+        <form>
+            <h1 class="title">LOGIN</h1>
+            <hr class="hr">
+            <div class="email">
+                <label class="emailLabel" for="loginemail">EMAIL</label>
+                <input type="email" id="loginemail" placeholder="digite seu email" required="true">
+            </div>
+            <div class="pass">
+                <label class="passLabel" for="loginpassword">SENHA</label>
+                <input type="text" id="loginpassword" placeholder="digite sua senha" maxlength="12" required="true">
+            </div>
+            <button class="btn" type="button" id="logbtn"> FAZER LOGIN</button>
+        </form>
+
+    </div>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
